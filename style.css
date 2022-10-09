@@ -1,4 +1,19 @@
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  padding: 1em;
+}
+
+.top {
+  font-family: "Press Start 2P", cursive;
+}
+
+.secondary-text {
+  color: #555;
+  font-size: 0.75em;
 }
