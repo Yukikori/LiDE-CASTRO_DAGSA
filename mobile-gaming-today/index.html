@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keywords" content="gaming, mobile, phones, history, chronicle" />
   <meta name="author" content="Jayden Dagsa, Ac De Castro" />
-  <meta name="revised" content="Dec-1-2022" />
+  <meta name="revised" content="Dec-18-2022" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -59,17 +59,75 @@
         </div>
       </article>
       <div class="w-screen">
-        <a href="../" class="bg-blue-500 text-gray-50 px-4 py-2 float-right rounded-lg mr-8"><i class="bi-house-door-fill"></i> Return to
-          home</a>
+        <a href="../"
+          class="bg-blue-500 text-gray-50 px-4 py-2 float-right rounded-lg mr-8 hover:font-bold transition-all ease-linear">
+          <i class="bi-house-door-fill"></i> Return to home
+        </a>
       </div>
     </section>
-    <footer class="text-center w-full text-lg font-bold p-4">
-      Copyright &copy; <span id="copyrightYear"></span> by Jayden Dagsa and Ac De Castro.<br>
-      <span class="text-base font-medium">
-        Angry Birds, Bejeweled, Call of Duty: Mobile and Genshin Impact are trademarks of their
-        respective publishers, and do not imply as explicit endorsement of the Chronicle of Mobile Gaming by them.
-      </span>
+    <footer class="text-center w-full text-lg font-bold flex space-y-4 p-4 flex-col">
+      <section class="px-20 font-normal text-left">
+        <article class="max-w-2xl mx-auto">
+          <h2 class="text-xl">Social media link references</h2>
+          <ol class="text-sm">
+            <li>
+              <h3 class="text-lg">Facebook</h3>
+              <span class="authorCitation"></span> (n.d.). <em>Home</em> [Facebook page]. Retrieved December 18, 2022 from
+              <span id="facebook-link-cite"></span>
+            </li>
+            <li>
+              <h3 class="text-lg">Twitter</h3>
+              <span class="authorCitation"></span> (n.d.). <em>Tweets</em> [Twitter profile]. Retrieved December 18, 2022 from
+              <span id="twitter-link-cite"></span>
+            </li>
+            <li>
+              <h3 class="text-lg">Twitter</h3>
+              <span class="authorCitation"></span> (n.d.). <em>Home</em> [YouTube channel]. Retrieved December 18, 2022 from
+              <span id="youtube-link-cite"></span>
+            </li>
+          </ol>
+        </article>
+      </section>
+      <section class="flex justify-center font-normal">
+        <ul class="flex space-x-6">
+          <li>
+            <a href="https://facebook.com/" id="facebook-link"
+              class="flex space-x-2 items-center text-blue-500 hover:font-bold transition-all ease-linear">
+              <svg class="bi" width="20" height="20" fill="currentColor">
+                <use xlink:href="../images/bootstrap-icons.svg#facebook" />
+              </svg>
+              <span id="facebook-handle"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" id="twitter-link"
+              class="flex space-x-2 items-center text-blue-400 hover:font-bold transition-all ease-linear">
+              <svg class="bi" width="20" height="20" fill="currentColor">
+                <use xlink:href="../images/bootstrap-icons.svg#twitter" />
+              </svg>
+              <span id="twitter-handle"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtube.com" id="youtube-link"
+              class="flex space-x-2 items-center text-red-700 hover:font-bold transition-all ease-linear">
+              <svg class="bi" width="20" height="20" fill="currentColor">
+                <use xlink:href="../images/bootstrap-icons.svg#youtube" />
+              </svg>
+              <span id="youtube-handle"></span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        Copyright &copy; <span id="copyrightYear"></span> by Jayden Dagsa and Ac De Castro.<br>
+        <span class="text-sm font-normal">
+          Angry Birds, Bejeweled, Call of Duty: Mobile and Genshin Impact are trademarks of their
+          respective publishers, and do not imply as explicit endorsement of the Chronicle of Mobile Gaming by them.
+        </span>
+      </section>
     </footer>
     <script src="../js/copyrightYear.js"></script>
+    <script src="../js/socialHandles.js"></script>
 </body>
 </html>
