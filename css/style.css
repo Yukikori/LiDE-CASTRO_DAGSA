@@ -569,6 +569,10 @@ video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .inset-0 {
   top: 0px;
   right: 0px;
@@ -602,6 +606,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -630,6 +639,10 @@ video {
   aspect-ratio: 16 / 9;
 }
 
+.aspect-auto {
+  aspect-ratio: auto;
+}
+
 .h-full {
   height: 100%;
 }
@@ -654,6 +667,18 @@ video {
   height: 100vh;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -670,12 +695,60 @@ video {
   width: 100vw;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-\[15\%\] {
+  width: 15%;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
 .max-w-full {
   max-width: 100%;
 }
 
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.flex-\[10\] {
+  flex: 10;
+}
+
+.flex-\[10_0_0\] {
+  flex: 10 0 0;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.flex-\[9_0_0\] {
+  flex: 9 0 0;
+}
+
+.flex-\[_0_0\] {
+  flex: 0 0;
+}
+
+.flex-\[8_0_0\] {
+  flex: 8 0 0;
+}
+
+.basis-full {
+  flex-basis: 100%;
 }
 
 .-translate-x-1\/2 {
@@ -809,6 +882,11 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
+.bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
 }
@@ -858,6 +936,14 @@ video {
   padding: 2rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-24 {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -903,6 +989,18 @@ video {
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .text-left {
@@ -986,6 +1084,14 @@ video {
 .text-red-700 {
   --tw-text-opacity: 1;
   color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+
+.accent-blue-400 {
+  accent-color: #60a5fa;
+}
+
+.accent-blue-500 {
+  accent-color: #3b82f6;
 }
 
 .shadow-lg {
@@ -1203,12 +1309,24 @@ video {
     display: flex;
   }
 
+  .xl\:h-96 {
+    height: 24rem;
+  }
+
   .xl\:w-64 {
     width: 16rem;
   }
 
+  .xl\:w-96 {
+    width: 24rem;
+  }
+
   .xl\:flex-row {
     flex-direction: row;
+  }
+
+  .xl\:items-start {
+    align-items: flex-start;
   }
 
   .xl\:justify-around {
