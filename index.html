@@ -10,26 +10,350 @@
     />
     <meta name="author" content="Jayden Dagsa, Ac De Castro" />
     <meta name="revised" content="Jan-20-2023" />
-    <link rel="icon" href="./favicon.ico" sizes="any" />
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta
+      name="description"
+      content="A chronicle of the history of mobile gaming."
+    />
+    <meta name="theme-color" content="#656DE2" />
+    <link rel="manifest" href="./manifest.json" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
+      rel="icon"
+      href="./favicon-light.ico"
+      type="image/x-icon"
+      sizes="any"
+      media="(prefers-color-scheme: light)"
     />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      rel="icon"
+      href="./favicon-dark.ico"
+      type="image/x-icon"
+      sizes="any"
+      media="(prefers-color-scheme: dark)"
     />
+    <link
+      rel="icon"
+      href="./favicon-light.png"
+      type="image/png"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      href="./favicon-dark.png"
+      type="image/png"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+    <link rel="mask-icon" href="./safari-pinned-tab-icon.svg" color="#656DE2" />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-light-1024x1366@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-dark-1024x1366@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-dark-1024x1366@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-light-1024x1366@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-light-834x1194@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-dark-834x1194@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-dark-834x1194@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-light-834x1194@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-light-834x1112@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-dark-834x1112@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-dark-834x1112@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-light-834x1112@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-light-810x1080@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-dark-810x1080@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-dark-810x1080@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-light-810x1080@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-light-768x1024@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-dark-768x1024@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-dark-768x1024@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-light-768x1024@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="./images/launch-portrait-light-430x932@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="./images/launch-portrait-dark-430x932@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="./images/launch-landscape-dark-430x932@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="./images/launch-landscape-light-430x932@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="./images/launch-portrait-light-428x926@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="./images/launch-portrait-dark-428x926@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="./images/launch-landscape-dark-428x926@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="./images/launch-landscape-light-428x926@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="./images/launch-portrait-light-414x896@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="./images/launch-portrait-dark-414x896@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="./images/launch-landscape-dark-414x896@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="./images/launch-landscape-light-414x896@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-light-414x896@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-dark-414x896@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-dark-414x896@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-light-414x896@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="./images/launch-portrait-light-414x736@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="./images/launch-portrait-dark-414x736@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="./images/launch-landscape-dark-414x736@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="./images/launch-landscape-light-414x736@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="./images/launch-portrait-light-393x852@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="./images/launch-portrait-dark-393x852@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="./images/launch-landscape-dark-393x852@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="./images/launch-landscape-light-393x852@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="./images/launch-portrait-light-390x844@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="./images/launch-portrait-dark-390x844@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="./images/launch-landscape-dark-390x844@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="./images/launch-landscape-light-390x844@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="./images/launch-portrait-light-375x812@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="./images/launch-portrait-dark-375x812@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="./images/launch-landscape-dark-375x812@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="./images/launch-landscape-light-375x812@3x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-light-375x667@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-dark-375x667@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-dark-375x667@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-light-375x667@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-light-320x568@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="./images/launch-portrait-dark-320x568@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: dark) and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-dark-320x568@2x.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="(prefers-color-scheme: light) and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="./images/launch-landscape-light-320x568@2x.png"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Chronicle of Mobile Gaming</title>
   </head>
   <body class="absolute box-content min-h-full w-full">
-    <div class="overflow-x-hidden">
+    <div class="overflow-x-hidden dark:bg-gray-900">
       <section class="flex flex-col items-center">
         <h1
-          class="font-pressstart text-2xl md:text-4xl lg:text-6xl text-center px-24 py-12 lg:max-w-[75%]"
+          class="font-pressstart text-2xl md:text-4xl lg:text-6xl text-center px-24 py-12 lg:max-w-[75%] dark:text-gray-200"
         >
           Chronicle of<br />Mobile Gaming
         </h1>
@@ -41,32 +365,42 @@
             class="p-4 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-4 items-center"
           >
             <div class="flex flex-col space-y-4 items-center xl:items-start">
-              <div class="w-full md:w-64 xl:w-96">
+              <div
+                class="w-full md:w-64 xl:w-96 rounded-md md:rounded-lg lg:rounded-xl overflow-hidden"
+              >
                 <img
                   src="./images/video-games-aigen.png"
                   alt="'video games realistic', generated by DALL-E 2."
+                  class="object-cover w-full h-full"
                 />
               </div>
-              <p class="italic text-slate-500">
+              <p
+                class="italic text-sm text-center text-gray-500 dark:text-gray-400"
+              >
                 'video games realistic', generated by DALL-E 2.
               </p>
             </div>
             <div class="flex flex-col space-y-4 items-center xl:items-start">
               <div
-                class="w-full md:w-64 md:h-64 xl:w-96 xl:h-96 overflow-hidden"
+                class="w-full md:w-64 md:h-64 xl:w-96 xl:h-96 overflow-hidden rounded-md md:rounded-lg lg:rounded-xl"
               >
                 <img
                   src="./images/UnityEngine-CODM.jpg"
                   class="object-cover w-full h-full"
+                  alt="Someone playing Call of Duty Mobile."
                 />
               </div>
-              <p class="italic text-slate-500 text-sm">
+              <p
+                class="italic text-gray-500 text-sm text-center dark:text-gray-400"
+              >
                 Someone playing Call of Duty Mobile.
               </p>
             </div>
           </div>
-          <div class="xl:text-right xl:float-right xl:space-x-24">
-            <h3 class="text-4xl">Player, welcome to the Chronicle!</h3>
+          <div
+            class="xl:text-right xl:float-right xl:space-x-24 dark:text-gray-200"
+          >
+            <h1 class="text-4xl">Player, welcome to the Chronicle!</h1>
             <p class="text-lg">
               Mobile gaming has evolved over the years, and through this portal,
               you will be able to rewind time to see how it has changed and
@@ -89,35 +423,37 @@
           </div>
         </article>
         <nav class="text-center px-8 lg:px-16 flex flex-col space-y-8 w-full">
-          <h3 class="text-4xl font-bold">Choose your path!</h3>
+          <h1 class="text-4xl font-bold dark:text-gray-200">
+            Choose your path!
+          </h1>
           <div
             class="grid grid-cols-1 grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 gap-8 xl:flex xl:justify-around xl:space-x-8"
           >
             <div
-              class="bg-angry-birds xl:w-64 h-64 bg-center bg-cover flex justify-center items-center rounded-lg overflow-hidden hover:shadow-xl hover:shadow-gray-400 transition-all hover:-translate-y-5 hover:scale-105 ease-linear"
+              class="bg-angry-birds xl:w-64 h-64 bg-center bg-cover flex justify-center items-center rounded-lg overflow-hidden hover:shadow-xl dark:hover:shadow-2xl hover:shadow-gray-400 dark:hover:shadow-black transition-all hover:-translate-y-5 hover:scale-105 ease-linear bg-"
             >
               <a
-                class="text-2xl font-medium w-full h-full bg-gray-800 bg-opacity-75 flex justify-center items-center text-gray-50 hover:font-bold transition-all ease-linear"
+                class="text-2xl font-medium w-full h-full bg-gray-800 bg-opacity-75 flex justify-center items-center text-gray-50 hover:font-bold transition-all ease-linear hover:bg-opacity-60 dark:bg-opacity-60 dark:hover:bg-opacity-50"
                 href="./beginnings-of-mobile-gaming/"
               >
                 Angry Birds
               </a>
             </div>
             <div
-              class="bg-bejeweled xl:w-64 h-64 bg-center bg-cover flex justify-center items-center rounded-lg overflow-hidden hover:shadow-xl hover:shadow-gray-400 hover:-translate-y-5 hover:scale-105 transition-all ease-linear"
+              class="bg-bejeweled xl:w-64 h-64 bg-center bg-cover flex justify-center items-center rounded-lg overflow-hidden hover:shadow-xl dark:hover:shadow-2xl hover:shadow-gray-400 dark:hover:shadow-black hover:-translate-y-5 hover:scale-105 transition-all ease-linear"
             >
               <a
-                class="text-2xl font-medium w-full h-full bg-gray-800 bg-opacity-75 flex justify-center items-center text-gray-50 hover:font-bold transition-all ease-linear"
+                class="text-2xl font-medium w-full h-full bg-gray-800 bg-opacity-75 flex justify-center items-center text-gray-50 hover:font-bold transition-all ease-linear hover:bg-opacity-60 dark:bg-opacity-60 dark:hover:bg-opacity-50"
                 href="./classic-mobile-genres/"
               >
                 Bejeweled
               </a>
             </div>
             <div
-              class="bg-codm xl:w-64 h-64 bg-center bg-cover flex justify-center items-center rounded-lg overflow-hidden hover:shadow-xl hover:shadow-gray-400 hover:-translate-y-5 hover:scale-105 transition-all ease-linear"
+              class="bg-codm xl:w-64 h-64 bg-center bg-cover flex justify-center items-center rounded-lg overflow-hidden hover:shadow-xl dark:hover:shadow-2xl hover:shadow-gray-400 dark:hover:shadow-black hover:-translate-y-5 hover:scale-105 transition-all ease-linear"
             >
               <a
-                class="text-2xl font-medium w-full h-full bg-gray-800 bg-opacity-75 flex justify-center items-center text-gray-50 hover:font-bold transition-all ease-linear"
+                class="text-2xl font-medium w-full h-full bg-gray-800 bg-opacity-75 flex justify-center items-center text-gray-50 hover:font-bold transition-all ease-linear hover:bg-opacity-60 dark:bg-opacity-60 dark:hover:bg-opacity-50"
                 href="./newer-mobile-genres/"
               >
                 Call of Duty:<br class="md:hidden" />
@@ -125,10 +461,10 @@
               </a>
             </div>
             <div
-              class="bg-genshin xl:w-64 h-64 bg-center bg-cover flex justify-center items-center rounded-lg overflow-hidden hover:shadow-xl hover:shadow-gray-400 hover:-translate-y-5 hover:scale-105 transition-all ease-linear"
+              class="bg-genshin xl:w-64 h-64 bg-center bg-cover flex justify-center items-center rounded-lg overflow-hidden hover:shadow-xl dark:hover:shadow-2xl hover:shadow-gray-400 dark:hover:shadow-black hover:-translate-y-5 hover:scale-105 transition-all ease-linear"
             >
               <a
-                class="text-2xl font-medium w-full h-full bg-gray-800 bg-opacity-75 flex justify-center items-center text-gray-50 hover:font-bold transition-all ease-linear"
+                class="text-2xl font-medium w-full h-full bg-gray-800 bg-opacity-75 flex justify-center items-center text-gray-50 hover:font-bold transition-all ease-linear hover:bg-opacity-60 dark:bg-opacity-60 dark:hover:bg-opacity-50"
                 href="./mobile-gaming-today/"
               >
                 Genshin<br class="md:hidden" />
@@ -139,7 +475,7 @@
         </nav>
       </section>
       <section>
-        <div class="w-full flex justify-center pt-4">
+        <div class="w-full flex justify-center pt-4 dark:text-gray-200">
           <button id="open" class="flex space-x-2 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -151,25 +487,31 @@
                 d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c.966 0 1.89.166 2.75.47a.75.75 0 001-.708V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z"
               />
             </svg>
-            <p>See multimedia references</p>
+            <p class="hover:font-bold transition-all">
+              See multimedia references
+            </p>
           </button>
         </div>
         <div
           id="overlay"
-          class="fixed invisible z-40 w-full h-full inset-0 bg-gray-900 bg-opacity-60"
+          class="fixed invisible z-40 w-full h-full inset-0 bg-gray-900 dark:bg-black dark:bg-opacity-60 bg-opacity-60"
         ></div>
         <section
-          class="invisible p-10 md:rounded-md font-normal text-left top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fixed z-50 bg-gray-50 md:shadow-lg flex flex-col w-full h-full md:w-auto md:h-auto justify-center md:justify-start"
+          class="invisible p-10 md:rounded-md font-normal text-left top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fixed z-50 bg-gray-50 md:shadow-lg flex flex-col w-full h-full md:w-auto md:h-auto justify-center md:justify-start dark:bg-gray-800"
           id="dialog"
         >
           <div
-            class="text-2xl flex justify-between pb-4 border-b border-gray-300"
+            class="text-2xl flex justify-between pb-4 border-b border-slate-300 dark:border-gray-500 dark:text-gray-200"
           >
             <h1>Multimedia sources</h1>
-            <button id="close"><i class="bi-x-lg"></i></button>
+            <button id="close">
+              <svg class="bi" width="20" height="20" fill="currentColor">
+                <use xlink:href="./images/bootstrap-icons.svg#x-lg" />
+              </svg>
+            </button>
           </div>
           <div
-            class="flex space-y-4 flex-col items-start h-4/6 mt-4 overflow-y-scroll overflow-x-hidden md:flex-row md:space-x-4 md:space-y-0"
+            class="flex space-y-4 flex-col items-start h-4/6 mt-4 overflow-y-scroll overflow-x-hidden md:flex-row md:space-x-4 md:space-y-0 dark:text-gray-200"
           >
             <article class="max-w-full lg:max-w-2xl">
               <h2 class="text-xl">Article images</h2>
@@ -181,6 +523,7 @@
                   <a
                     href="https://labs.openai.com/s/ydav9XHRPAOo23Ve7jVKNKnU"
                     class="break-words"
+                    target="_blank"
                     >https://labs.openai.com/s/ydav9XHRPAOo23Ve7jVKNKnU</a
                   >
                 </li>
@@ -194,6 +537,7 @@
                   <a
                     href="https://blog.unity.com/games/build-stunning-mobile-games-that-run-smoothly-with-adaptive-performance"
                     class="break-words"
+                    target="_blank"
                     >https://blog.unity.com/games/build-stunning-mobile-games-that-run-smoothly-with-adaptive-performance</a
                   >
                 </li>
@@ -212,6 +556,7 @@
                   <a
                     href="https://www.wallpapers.net/free-download-angry-birds-hd-wallpaper-for-desktop-mobiles/3840x2160"
                     class="break-words"
+                    target="_blank"
                     >https://www.wallpapers.net/free-download-angry-birds-hd-wallpaper-for-desktop-mobiles/3840x2160</a
                   >
                 </li>
@@ -222,6 +567,7 @@
                   <a
                     href="https://www.ea.com/games/bejeweled"
                     class="break-words"
+                    target="_blank"
                     >https://www.ea.com/games/bejeweled</a
                   >
                 </li>
@@ -236,6 +582,7 @@
                   <a
                     href="https://wallpapersden.com/call-of-duty-mobile-season-8-wallpaper/7680x4320/"
                     class="break-words"
+                    target="_blank"
                     >https://wallpapersden.com/call-of-duty-mobile-season-8-wallpaper/7680x4320/</a
                   >
                 </li>
@@ -248,6 +595,7 @@
                   <a
                     href="https://www.xtrafondos.com/en/wallpaper/3840x2160/7760-genshin-impact-characters.html"
                     class="break-words"
+                    target="_blank"
                     >https://www.xtrafondos.com/en/wallpaper/3840x2160/7760-genshin-impact-characters.html</a
                   >
                 </li>
@@ -257,7 +605,7 @@
         </section>
       </section>
       <footer>
-        <p class="text-center w-full text-lg font-bold p-4">
+        <p class="text-center w-full text-lg font-bold p-4 dark:text-gray-200">
           Copyright &copy; <span id="copyrightYear"></span> by Jayden Dagsa and
           Ac De Castro.<br />
           <span class="text-sm font-normal">
@@ -271,5 +619,12 @@
     </div>
     <script src="./js/copyrightYear.js"></script>
     <script src="./js/openDialog.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("./sw.js");
+        });
+      }
+    </script>
   </body>
 </html>
