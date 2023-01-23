@@ -6,4 +6,4 @@ The Chronicle of Mobile Gaming is developed with a number of tools, especially T
 2. Install tailwindcss package:
    `npm install tailwindcss -D`
 3. Run tailwindcss CLI:
-   `npx tailwindcss -i ./src/input.css -o ./css/style.css/ --watch`
+   `npx tailwindcss -i ./src/input.css -o ./css/style.css/ --watch --minify`
