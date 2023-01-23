@@ -20,10 +20,6 @@ this.addEventListener('install', function (event) {
     './favicon-light.png',
     './favicon-dark.png',
     './safari-pinned-tab-icon.svg',
-    './audio/angry-birds.mp3',
-    './audio/bejeweled3-classic.mp3',
-    './audio/codm-wild-west.mp3',
-    './audio/sanctuary-of-surasthana-extended.mp3',
   ];
 
   event.waitUntil(
